@@ -1,0 +1,20 @@
+{
+    "name": "realdriss/plugin-management",
+    "description": "Plugin management package",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "RealDriss\\PluginManagement\\": "src"
+        }
+    },
+    "require": {
+        "realdriss/platform": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RealDriss\\PluginManagement\\Providers\\PluginManagementServiceProvider"
+            ]
+        }
+    }
+}
